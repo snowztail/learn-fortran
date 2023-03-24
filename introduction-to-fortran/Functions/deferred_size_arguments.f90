@@ -9,7 +9,7 @@ program deferred_size_arguments
     print*, sum_of_cubes(array1)
 
     array2=(/2,4/)
-    print*, sum_of_cubes(array2) 
+    print*, sum_of_cubes(array2)
 
     contains
 
@@ -22,7 +22,7 @@ program deferred_size_arguments
 
         do ii=1, size(array)
             evaluation=evaluation+array(ii)**3
-        end do	    
+        end do
 
     end function sum_of_cubes
 

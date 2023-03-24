@@ -23,9 +23,9 @@ program functions
 
         function function_name2(arg1, arg2)result(evaluation)
             real    ::  arg1, arg2, evaluation
-        
+
             evaluation=arg1*arg2
-        
+
         end function function_name2
 
 end program functions

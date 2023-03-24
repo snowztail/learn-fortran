@@ -1,4 +1,4 @@
-program loops_exercise
+program solution_loops
 
     implicit none
 
@@ -41,4 +41,4 @@ program loops_exercise
 
 
 
-end program loops_exercise
+end program solution_loops

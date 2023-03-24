@@ -1,4 +1,4 @@
-program swap_exercise
+program solution_swap
 
     implicit none
 
@@ -35,4 +35,4 @@ program swap_exercise
 
     end subroutine
 
-end program swap_exercise
+end program solution_swap

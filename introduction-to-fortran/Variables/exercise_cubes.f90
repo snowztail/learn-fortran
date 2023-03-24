@@ -1,34 +1,22 @@
-program exercise_cubes
-
+program  exercise_cubes
     implicit none
-    
-    real    ::  side_length
-    integer ::  n_cube
-    real    ::  volume_one_cube, surface_area_one_cube, volume_all_cubes
-    real    ::  surface_area_all_cubes, surface_area_volume_ratio
 
-    !Set the length of a side of a cube and the number of cubes
-    side_length=3.2
-    n_cube=5
+    integer ::  nCubes
+    real    ::  cubeLength, cubeVolume, cubeArea
 
-    !Calculate the volume of one cube
-    volume_one_cube=side_length**3
-    print*, "Volume of one cube: ", volume_one_cube
+    nCubes = 5
+    cubeLength = 3.2
+    cubeVolume = cubeLength ** 3
+    cubeArea = cubeLength ** 2 * 6
 
-    !Calculate the surface area of one cube
-    surface_area_one_cube=6*side_length**2
-    print*, "Surface area of one cube: ", surface_area_one_cube
+    print*, "The volume of one cube is: ", cubeVolume
 
-    !Calculate the volume of all cubes
-    volume_all_cubes=volume_one_cube*n_cube
-    print*, "Volume of all cubes: ", volume_all_cubes
+    print*, "The area of all faces of one cube is: ", cubeArea
 
-    !Calculate the surface area of all cubes
-    surface_area_all_cubes=surface_area_one_cube*n_cube
-    print*, "Surface area of all cubes: ", surface_area_all_cubes
+    print*, "The volume of all cubes is: ", cubeVolume * nCubes
 
-    !Calculate the surface area to volume ratio
-    surface_area_volume_ratio=surface_area_one_cube/volume_one_cube
-    print*, "Surface area to volume ratio: ", surface_area_volume_ratio
+    print*, "The area of all cubes is: ", cubeArea * nCubes
 
-end program exercise_cubes
+    print*, "The surface area to volume ratio: ", cubeArea / cubeVolume
+
+end program  exercise_cubes

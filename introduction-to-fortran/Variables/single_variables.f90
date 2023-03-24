@@ -6,7 +6,7 @@ program single_variables
     real    ::  real2
     character(100)  ::  char1, char2
 
-    print*, "ints intial:", int1, int2, int3
+    print*, "ints initial:", int1, int2, int3
 
     int1=1
     int2=3

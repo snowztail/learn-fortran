@@ -1,4 +1,4 @@
-program cuboids_exercise
+program solution_cuboids
 
     implicit none
 
@@ -11,8 +11,7 @@ program cuboids_exercise
             real    ::  height, width, length, volume
 
             volume=height*width*length
-        
+
         end function cuboid_volume
 
-end program cuboids_exercise
-
+end program solution_cuboids
